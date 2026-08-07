@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://maxm5eddpl75"]
 
+[ext_resource type="Texture2D" uid="uid://b4mdtx0te2lys" path="res://Images/pink-grid-neon-patterned-background_53876-114920.png" id="1_vfcv8"]
+[ext_resource type="Texture2D" uid="uid://xrno5ct0cu5k" path="res://Images/images-removebg-preview.png" id="2_kb6yk"]
+
 [node name="LevelScene" type="Node2D" unique_id=1853387605]
+
+[node name="Background" type="TextureRect" parent="." unique_id=320612718]
+offset_right = 1150.0
+offset_bottom = 740.0
+texture = ExtResource("1_vfcv8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=586471923]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Heart" type="TextureRect" parent="HBoxContainer" unique_id=781137578]
+layout_mode = 2
+texture = ExtResource("2_kb6yk")
