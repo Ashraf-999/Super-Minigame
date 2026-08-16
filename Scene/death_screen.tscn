@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://daauprei03es1"]
+
+[ext_resource type="Script" uid="uid://18ov5yhkfkiv" path="res://script/death_screen.gd" id="1_rrxm1"]
+[ext_resource type="Texture2D" uid="uid://b4mdtx0te2lys" path="res://Images/pink-grid-neon-patterned-background_53876-114920.png" id="1_ru38t"]
+[ext_resource type="Texture2D" uid="uid://cdnoql61nqqjd" path="res://Images/images__4_-removebg-preview.png" id="2_rrxm1"]
+
+[node name="Death_Scene" type="Node2D" unique_id=2134516168]
+script = ExtResource("1_rrxm1")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1523855411]
+offset_right = 1150.0
+offset_bottom = 740.0
+texture = ExtResource("1_ru38t")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1703100596]
+custom_maximum_size = Vector2(300, 300)
+offset_left = 402.0
+offset_top = 204.0
+offset_right = 702.0
+offset_bottom = 504.0
+texture = ExtResource("2_rrxm1")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=647377285]
+clip_contents = false
+offset_left = 181.0
+offset_top = 57.0
+offset_right = 968.0
+offset_bottom = 193.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 70
+text = "Better Luck Next Time"

@@ -1,19 +1,68 @@
 [gd_scene format=3 uid="uid://maxm5eddpl75"]
 
+[ext_resource type="Script" uid="uid://pohy13k00hyv" path="res://script/level_scene.gd" id="1_kb6yk"]
 [ext_resource type="Texture2D" uid="uid://b4mdtx0te2lys" path="res://Images/pink-grid-neon-patterned-background_53876-114920.png" id="1_vfcv8"]
-[ext_resource type="Texture2D" uid="uid://xrno5ct0cu5k" path="res://Images/images-removebg-preview.png" id="2_kb6yk"]
+[ext_resource type="Texture2D" uid="uid://2h0wvmt0lumf" path="res://Images/Heart.png" id="3_kb6yk"]
 
 [node name="LevelScene" type="Node2D" unique_id=1853387605]
+script = ExtResource("1_kb6yk")
 
 [node name="Background" type="TextureRect" parent="." unique_id=320612718]
 offset_right = 1150.0
 offset_bottom = 740.0
 texture = ExtResource("1_vfcv8")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=586471923]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="HeartContainer" type="HBoxContainer" parent="." unique_id=586471923]
+offset_left = 190.0
+offset_top = 105.0
+offset_right = 974.0
+offset_bottom = 305.0
 
-[node name="Heart" type="TextureRect" parent="HBoxContainer" unique_id=781137578]
+[node name="Heart" type="TextureRect" parent="HeartContainer" unique_id=781137578]
+custom_maximum_size = Vector2(150, 200)
 layout_mode = 2
-texture = ExtResource("2_kb6yk")
+texture = ExtResource("3_kb6yk")
+stretch_mode = 5
+
+[node name="Heart2" type="TextureRect" parent="HeartContainer" unique_id=926024064]
+custom_maximum_size = Vector2(150, 200)
+layout_mode = 2
+texture = ExtResource("3_kb6yk")
+stretch_mode = 5
+
+[node name="Heart3" type="TextureRect" parent="HeartContainer" unique_id=458779646]
+custom_maximum_size = Vector2(150, 200)
+layout_mode = 2
+texture = ExtResource("3_kb6yk")
+stretch_mode = 5
+
+[node name="Heart4" type="TextureRect" parent="HeartContainer" unique_id=1084597177]
+custom_maximum_size = Vector2(150, 200)
+layout_mode = 2
+texture = ExtResource("3_kb6yk")
+stretch_mode = 5
+
+[node name="Heart5" type="TextureRect" parent="HeartContainer" unique_id=1599333755]
+custom_maximum_size = Vector2(150, 200)
+layout_mode = 2
+texture = ExtResource("3_kb6yk")
+stretch_mode = 5
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=660579586]
+offset_left = 487.0
+offset_top = 306.0
+offset_right = 718.0
+offset_bottom = 396.0
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/normal_font_size = 50
+text = "Level 1"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1003417247]
+offset_left = 536.0
+offset_top = 493.0
+offset_right = 612.0
+offset_bottom = 605.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/normal_font_size = 50
+text = "0.0"

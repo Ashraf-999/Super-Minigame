@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b45c2frsq6wbp"]
+
+[ext_resource type="Script" uid="uid://bp3wseycr6bsr" path="res://script/winner_scene.gd" id="1_f3pj6"]
+[ext_resource type="Texture2D" uid="uid://b4mdtx0te2lys" path="res://Images/pink-grid-neon-patterned-background_53876-114920.png" id="2_oo3ip"]
+[ext_resource type="Texture2D" uid="uid://dqci0njn7tk7q" path="res://Images/Pacman.png" id="3_5f2p1"]
+
+[node name="Winner_Scene" type="Node2D" unique_id=375283279]
+script = ExtResource("1_f3pj6")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1916290723]
+offset_right = 1150.0
+offset_bottom = 740.0
+texture = ExtResource("2_oo3ip")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1234304571]
+custom_maximum_size = Vector2(300, 300)
+offset_left = 402.0
+offset_top = 204.0
+offset_right = 702.0
+offset_bottom = 504.0
+texture = ExtResource("3_5f2p1")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=829740322]
+clip_contents = false
+offset_left = 494.0
+offset_top = 71.0
+offset_right = 627.0
+offset_bottom = 207.0
+theme_override_constants/outline_size = 40
+theme_override_font_sizes/normal_font_size = 70
+text = "GG!"

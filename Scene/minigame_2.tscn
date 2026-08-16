@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dj34ga1pf57f8"]
+
+[ext_resource type="Texture2D" uid="uid://b4mdtx0te2lys" path="res://Images/pink-grid-neon-patterned-background_53876-114920.png" id="1_2bl6a"]
+[ext_resource type="Script" uid="uid://cyx1dxowswd2a" path="res://script/minigame_2.gd" id="1_k70ht"]
+[ext_resource type="Texture2D" uid="uid://co5ah5sworlns" path="res://Images/car-removebg-preview.png" id="2_1a88x"]
+[ext_resource type="Script" uid="uid://dj31l8ka4nwcf" path="res://script/button_1.gd" id="4_ihuf6"]
+[ext_resource type="PackedScene" uid="uid://bkagxitsdy10h" path="res://Scene/Timer.tscn" id="5_8x6x7"]
+
+[node name="minigame_2" type="Node2D" unique_id=246938700]
+script = ExtResource("1_k70ht")
+
+[node name="ScrollingEffect" type="Parallax2D" parent="." unique_id=974136191]
+repeat_size = Vector2(1150, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingEffect" unique_id=322018563]
+offset_left = -6.0
+offset_top = -96.0
+offset_right = 1145.0
+offset_bottom = 644.0
+texture = ExtResource("1_2bl6a")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=1303126768]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 110.0
+offset_top = 143.0
+offset_right = 310.0
+offset_bottom = 343.0
+texture_normal = ExtResource("2_1a88x")
+stretch_mode = 0
+script = ExtResource("4_ihuf6")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=1089698000]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 566.0
+offset_top = 11.0
+offset_right = 766.0
+offset_bottom = 211.0
+texture_normal = ExtResource("2_1a88x")
+stretch_mode = 0
+script = ExtResource("4_ihuf6")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=378229081]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 657.0
+offset_top = 310.0
+offset_right = 857.0
+offset_bottom = 510.0
+texture_normal = ExtResource("2_1a88x")
+stretch_mode = 0
+script = ExtResource("4_ihuf6")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=1063226876]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 892.0
+offset_top = 48.0
+offset_right = 1092.0
+offset_bottom = 248.0
+texture_normal = ExtResource("2_1a88x")
+stretch_mode = 0
+script = ExtResource("4_ihuf6")
+
+[node name="ThemedTimer" parent="." unique_id=568076943 instance=ExtResource("5_8x6x7")]
+
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]

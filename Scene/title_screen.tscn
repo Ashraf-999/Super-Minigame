@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hbob8upbvqkl"]
 
 [ext_resource type="Texture2D" uid="uid://b0jbujtgyk41u" path="res://Images/retro-futuristic-80s-background-free-vector.jpg" id="1_j44jw"]
-[ext_resource type="Script" uid="uid://hb2erxaxbtbi" path="res://Scene/background.gd" id="1_u8psj"]
+[ext_resource type="Script" uid="uid://hb2erxaxbtbi" path="res://script/TitleScreen.gd" id="1_u8psj"]
 
 [node name="TitleScreen" type="Node2D" unique_id=1367391509]
 script = ExtResource("1_u8psj")
@@ -9,7 +9,7 @@ script = ExtResource("1_u8psj")
 [node name="Background" type="TextureRect" parent="." unique_id=601826198]
 offset_left = -7.0
 offset_top = 3.0
-offset_right = 1149.0
+offset_right = 1155.0
 offset_bottom = 645.0
 texture = ExtResource("1_j44jw")
 
